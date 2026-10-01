@@ -20,3 +20,17 @@ public class FeeApp {
         FeeReport.print(s);
     }
 }
+
+
+SAAPMLE INPUT: 
+  Meena BE
+  Ravi ME
+  Anu BSc
+
+  
+SAMPLE OUTPUT:
+NAME     COURSE       FEE
+Meena    BE          75000.00
+Ravi     ME          60000.00
+Anu      BSc         40000.00
+Total fee = 175000.00
