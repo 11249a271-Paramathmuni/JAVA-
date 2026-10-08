@@ -1,0 +1,91 @@
+USECASE::
+Salary Slip.java:
+ADD A DRIVER CLASS PAID BASIC PLUS RS.3000 OVER TIME 
+
+PROGRAME::
+abstract class Emp {
+    String name;
+    double basic;
+
+    Emp(String n, double b) {
+        name = n;
+        basic = b;
+    }
+
+    abstract double pay();
+}
+
+class Manager extends Emp {
+    Manager(String n, double b) {
+        super(n, b);
+    }
+
+    double pay() {
+        return basic + 0.40 * basic;
+    }
+}
+
+class Engineer extends Emp {
+    Engineer(String n, double b) {
+        super(n, b);
+    }
+
+    double pay() {
+        return basic + 0.20 * basic;
+    }
+}
+
+class Intern extends Emp {
+    Intern(String n, double b) {
+        super(n, b);
+    }
+
+    double pay() {
+        return basic;
+    }
+}
+
+// NEW DRIVER CLASS
+class Driver extends Emp {
+    Driver(String n, double b) {
+        super(n, b);
+    }
+
+    double pay() {
+        return basic + 3000;
+    }
+}
+
+public class SalarySlip {
+    public static void main(String[] args) {
+
+        Emp[] employees = {
+            new Manager("Meena", 50000),
+            new Engineer("Ravi", 40000),
+            new Intern("Anu", 12000),
+            new Driver("Kumar", 25000)
+        };
+
+        System.out.println("Employee Salary Slip");
+        System.out.println("--------------------");
+
+        for (Emp e : employees) {
+            System.out.printf("%-10s %10.2f%n", e.name, e.pay());
+        }
+    }
+}
+
+
+INPUT::
+Meena  - 50000
+Ravi   - 40000
+Anu    - 12000
+Kumar  - 25000
+
+OUT PUT:
+Employee Salary Slip
+--------------------
+Meena         70000.00
+Ravi          48000.00
+Anu           12000.00
+Kumar         28000.00
