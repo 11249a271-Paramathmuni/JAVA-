@@ -1,0 +1,33 @@
+
+--- Student Record Menu ---
+1. Add Student
+2. Search Student
+3. Update Marks
+4. Delete Student
+5. Display All Students (JTable)
+6. Exit
+Enter your choice: 2
+Register number to search: 102
+102 Divya 91
+
+--- Student Record Menu ---
+1. Add Student
+2. Search Student
+3. Update Marks
+4. Delete Student
+5. Display All Students (JTable)
+6. Exit
+Enter your choice: 3
+Register number: 102
+New marks: 95
+1 row(s) affected.
+
+--- Student Record Menu ---
+1. Add Student
+2. Search Student
+3. Update Marks
+4. Delete Student
+5. Display All Students (JTable)
+6. Exit
+Enter your choice: 6
+Exiting...
