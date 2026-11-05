@@ -1,0 +1,19 @@
+
+Experiment 10 - Database Connectivity
+
+Program 10.1: FetchData.java
+
+REG NAME MARKS
+101    Aravind    78
+102    Divya      91
+
+Program 10.2: InsertData.java
+
+1 row inserted.
+
+FetchData.java after insertion:
+
+REG NAME MARKS
+101    Aravind    78
+102    Divya      91
+103    Karthik    45
